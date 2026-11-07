@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const base = import.meta.env.BASE_URL;
+/*
 const meetingCalendarUrl = new URL('https://calendar.google.com/calendar/render');
 meetingCalendarUrl.searchParams.set('action', 'TEMPLATE');
 meetingCalendarUrl.searchParams.set('text', 'Beginner CAD & Fusion 360 Workshop');
 meetingCalendarUrl.searchParams.set('dates', '20261107T200000Z/20261107T230000Z');
 meetingCalendarUrl.searchParams.set('details', 'An introductory, hands-on tutorial covering the fundamentals of 3D modeling, essential tools, and best practices for taking a design from a concept to a finished 3D object. Perfect for absolute beginners and anyone wanting a refresher!');
 meetingCalendarUrl.searchParams.set('location', 'Discord Voice Call - #general Channel');
+*/
 ---
 
 <Layout
@@ -17,6 +19,7 @@ meetingCalendarUrl.searchParams.set('location', 'Discord Voice Call - #general C
   <!-- ── HERO ── -->
   <section class="hero">
     <div class="hero-bg"></div>
+
     <div
       class="container meeting-announcement"
       data-meeting-announcement
@@ -27,12 +30,15 @@ meetingCalendarUrl.searchParams.set('location', 'Discord Voice Call - #general C
         <div>
           <p class="meeting-banner-kicker">Saturday, November 7 · 12:00PM</p>
           <h2>CANCELLED - Beginner CAD & Fusion 360 Workshop</h2>
-          <p class="meeting-banner-details"></p>
+    <!-- Meeting announcement temporarily disabled.
+          <p class="meeting-banner-details">Detail text goes here
+          </p>
         </div>
         <div class="meeting-actions">
           <a class="meeting-calendar-link" href={meetingCalendarUrl.href} target="_blank" rel="noopener noreferrer">
             Add to Google Calendar
           </a>
+    -->
         </div>
       </div>
     </div>
